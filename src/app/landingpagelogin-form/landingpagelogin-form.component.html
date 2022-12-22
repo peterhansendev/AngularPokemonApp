@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="landingpagelogin-form.component.css">
+
+<body>
+    <form #loginForm="ngForm" (ngSubmit)="loginSubmit(loginForm)">
+        <fieldset class="mb-3">
+            <input type="text"
+             ngModel
+             #username="ngModel"
+             name="username"
+             id="username"        
+             class="border border-slate-300 p-2 rounded w-full"
+             placeholder="USERNAME">
+           
+        </fieldset>
+        <button type="submit"><b>LOGIN</b></button>
+    </form>
+</body>
+
